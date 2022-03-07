@@ -1,0 +1,85 @@
+/* import */
+@import "normalize.scss";
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@font-face {
+ font-family: "RFDewi-Semibold";
+ src: url("/fonts/RFDewi-Semibold.woff2") format("woff2"),
+        url("/fonts/RFDewi-Semibold.woff") format("woff");
+}
+
+/* main */
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: url(../img/fon.svg) center / cover repeat;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.header{
+  max-width: 1756px;
+  margin: 0 auto;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.location{
+  position: relative;
+  padding-left: 36px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/bx-map.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.phone{
+  position: relative;
+  padding-left: 38px;
+  color: #7A7A7A;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/phone-outline.svg) center / contain no-repeat;
+  }
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item{
+    margin: 0 25px;
+  }
+  &__link{
+    color: #7A7A7A;
+  }
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+}
