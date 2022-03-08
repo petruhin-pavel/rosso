@@ -10,6 +10,12 @@
         url("/fonts/RFDewi-Semibold.woff") format("woff");
 }
 
+/* colors */
+$primary-black: #444444;
+$primary-white: #FFFFFF;
+$secondary-gray: #7A7A7A;
+$secondary-light-gray: #C1C1C1;
+
 /* main */
 body{
   font-family: 'Montserrat', sans-serif;
@@ -30,6 +36,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid $secondary-light-gray;
   }
 }
 
@@ -82,4 +89,59 @@ ul{
 .nav-menu{
   display: flex;
   align-items: center;
+  &__item{
+    margin-right: 60px;
+  }
+  &__link{
+    color: $primary-black;
+  }
+}
+
+.burger-menu{
+  display: flex;
+  align-items: center;
+}
+
+.burger{
+  margin-right: 19px;
+}
+
+.icons-bar{
+  &__link{
+    margin-left: 30px;
+  }
+}
+
+.nav-menu{
+  border: 1px solid red;
+}
+.icons-bar{
+  border: 1px solid red;
+}
+
+
+
+.wrap{
+  text-align: center;
+}
+
+.span1{
+  display: inline-block;
+  width: 400px;
+  height: 20px;
+  background-color: red;
+}
+
+.span2{
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  background-color: greenyellow;
+}
+
+.span3{
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  background-color: green;
 }
